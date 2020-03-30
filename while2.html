@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+
+    #contenedor{
+        width: 24%;
+        background-color: #FFC;
+        margin: auto;
+        padding: 15px;
+    }
+    
+</style>  
+<script>
+
+    // 1. Definimos variables
+    var nombre, edad, poblacion;
+
+    // 1. Los valores los ingresa el usuario
+    nombre = prompt("Introduzca nombre");
+    // 2 . Validacion con WHILE
+        while(!isNaN(nombre)){
+
+            nombre = prompt("Introduce un nombre sin numeros");
+        }
+
+    edad = prompt("Introduzca edad");
+
+        
+        // 2. Validacion con WHILE si es numerico
+        while(isNaN(edad)){
+
+            edad = prompt("Introduce numeros");
+        
+        }    
+
+        // 2. Validacion con WHILE de rango
+        while(edad <= 0 || edad >= 105){
+            
+            edad = prompt("Introduce una edad valida");
+        }
+
+    poblacion = prompt("Introduzca poblacion");
+
+</script>
+</head>
+
+<body>
+
+<div id = "contenedor">
+    
+    <p> Nombre: <script> document.write(nombre); </script> </p>
+    <p> Edad: <script> document.write(edad); </script> </p>
+    <p> Poblacion: <script> document.write(poblacion); </script> </p>
+
+</div>    
+
+</body>
+</html>

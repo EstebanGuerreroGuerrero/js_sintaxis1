@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<script>
+
+// Variable que adopta la forma de un numero aleatorio entre 0 y 1
+var aleatorio = Math.random();
+
+    alert(aleatorio);
+// Para que sea entre 1 y 100
+var aleatorio2 = Math.random() * 100;
+
+    alert(aleatorio2);
+
+// Para que sean numeros enteros
+//   Math.round = Redondea numeros
+var aleatorio3 = Math.round( Math.random ()* 100) ;
+
+    alert(aleatorio3);
+
+
+
+// En el siguiente ejercicio haremos una sentencia que nos permita adivinar el numero que
+// ha generado el random.
+
+var aleatorio4 = Math.round(Math.random()* 100) ;
+var minum, intentos;
+minum = 0;
+intentos = 0;
+
+    do {
+
+        minum = prompt("Introduce un N° entre 1 y 100")
+
+        // Para que nos de una pista de si el n° aleatorio es mas alto o mas bajo del que ingresamos haremos lo siguiente
+        if(aleatorio4 > minum){
+
+            alert("Es mas alto");
+
+        } 
+
+        if(aleatorio4 < minum){
+
+            alert("Es mas bajo");
+
+        }
+
+
+    // este codigo se ejecutara siempre y cuando el numero aleatorio siga siendo diferente del numero que ingreso
+    } while (aleatorio4 != minum);
+
+    alert("Correcto");
+
+</script>
+
+</head>
+<body>
+    
+</body>
+</html>

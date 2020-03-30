@@ -1,0 +1,95 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Documento sin título</title>
+
+<style>
+
+table{
+	margin:auto;
+}
+
+
+</style>
+
+
+</head>
+
+<body id="cuerpo">
+<form name="form1" method="post" action="" id="miformulario">
+  <table width="25%" border="1" id="mitabla">
+    <tr>
+      <td>Nombre:</td>
+      <td><label for="textfield"></label>
+      <input type="text" name="textfield" id="textfield"></td>
+    </tr>
+    <tr>
+      <td>Apellidos:</td>
+      <td><input type="text" name="textfield2" id="textfield2"></td>
+    </tr>
+    <tr>
+      <td>Edad:</td>
+      <td><input type="text" name="textfield3" id="textfield3"></td>
+    </tr>
+    <tr>
+      <td>Carnet:</td>
+      <td><input type="text" name="textfield4" id="textfield4"></td>
+    </tr>
+    <tr>
+      <td><input type="submit" name="button" id="button" value="Enviar"></td>
+      <td><input type="reset" name="button2" id="button2" value="Restablecer"></td>
+    </tr>
+  </table>
+</form>
+
+<script>
+
+var cuerpo  = document.getElementById("cuerpo");
+
+var colorWeb = prompt("Introduce el color de fondo. Azul/Verde/Rojo").toLowerCase;
+
+if(colorWeb == "azul"){
+
+  cuerpo.style.backgroundColor = "Blue";
+
+}else if(colorWeb == "rojo"){
+
+  cuerpo.style.backgroundColor = "Red";
+
+}else if (colorWeb == "verde"){
+
+  cuerpo.style.backgroundColor = "Green";
+  
+}else{
+
+  alert("Este color no esta disponible");
+
+}
+
+//LOGICAAAAA !! Para analizar si lo ingresado es distinto de... Solo es una construccion distinta de lo mismo
+
+if(colorWeb != "azul" && colorWeb != "rojo" && colorWeb != "verde"){
+
+  alert("Este color no eta disponible");
+}else if (colorWeb == "verde"){ 
+
+  colorWeb.style.backgroundColor = "Green";
+
+}else if (colorWeb == "azul"){
+
+  colorWeb.style.backgroundColor = "Blue";
+
+}else{
+
+  colorWeb.style.backgroundColor = "Red";
+
+}
+
+
+</script>
+
+
+
+</body>
+</html>

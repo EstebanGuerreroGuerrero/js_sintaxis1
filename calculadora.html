@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+
+var num1 = parseInt(prompt("Introduce el primer N°"));
+var num2 = parseInt(prompt("Introduce segundo N°"));
+//El valor almacenado llega como STRING, por lo tango hay que parsearlo
+
+//Para preguntar por el tipo de dato typeof
+alert (typeof(num1));
+alert (typeof(num2));
+
+//A continuacion isNaN: Si nuestra variable No es nu numero...
+//  !: Negacion ----> Queda: Si nuestra variable Si es un numero, ejecuta todo esto              
+if(!isNaN(num1) && !isNaN(num2)){
+
+    var operacion = prompt("¿Que operacion quieres hacer? (suma, resta, multiplicacion, division)")
+
+        if (operacion == "suma"){
+
+            alert(num1 + num2);
+
+        }else if (operacion == "resta"){
+
+            alert(num1 - num2);
+
+        //En este caso validamos que la palabra este escrita con acento o sin acento
+        }else if (operacion == "multiplicación" || operacion == "multiplicacion"){
+
+            alert(num1 * num2);
+
+        //En este caso validamos que la palabra este escrita con acento o sin acento
+        }else if (operacion == "division" || operacion == "división"){
+
+            alert(num1 / num2);
+
+        }else{
+            
+            alert("operacion no contemplada");
+        }
+
+
+
+
+} else {
+
+    //ACLARACION: Dado que estamos parseando arriba, esta sentencia no sirve, pero asi es como se hace.
+
+    if(typeof(num1) == "string" || typeof(num2) == "string"){
+
+        alert("No se admiten caracteres");
+
+    } 
+}
+
+</script>
+</body>
+</html>
